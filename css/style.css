@@ -9,7 +9,6 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 100vh;
-    overflow-y: hidden;
 }
 
 main {
@@ -18,7 +17,7 @@ main {
     padding: 10px;
 
     & h1 {
-        font-family: "Poppins", sans-serif;
+        font-family: "Faculty Glyphic", sans-serif;
         font-size: 6em;
         text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.386);
         transition: all 0.5s ease;
@@ -43,6 +42,7 @@ main {
 
     & h2 {
         font-family: "Poppins", sans-serif;
+        font-weight: 200;
         font-size: 1.8em;
         transition: all 0.5s ease;
         cursor: pointer;
@@ -74,35 +74,37 @@ main {
 section#titulo {
     max-width: fit-content;
     text-align: center;
-    padding: 30px;
+    padding: 10px;
     color: white;
     margin: 15vh auto;
     transition: all 0.5s ease;
+    animation: titulos 0.8s ease-out normal;
     
   }
 
 .botoes {
     margin-top: 0px;
     transition: all 0.5s ease;
+    animation: botoes 0.8s ease normal;
 
     @media only screen and (max-width: 900px){
         margin-top: 10px;
     }
 
     @media only screen and (max-width: 800px){
-        margin-top: 20px;
+        margin-top: 10px;
     }
 
     @media only screen and (max-width: 600px){
-        margin-top: 20px;
+        margin-top: 10px;
     }
 
     @media only screen and (max-width: 440px){
-        margin-top: 80px;
+        margin-top: 10px;
     }
 
     @media only screen and (max-width: 330px){
-        margin-top: 30px;
+        margin-top: 10px;
     }
 }
 
@@ -110,19 +112,21 @@ section#titulo {
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     margin: 5px 50px;
-    padding: 10px 30px;
+    padding: 10px 40px;
     font-size: 1rem;
     cursor: pointer;
-    border-radius: 15px;
-    border: 1px solid white;
+    background-color: rgb(54, 70, 54);
+    color: white;
+    border-radius: 20px;
+    border: 1px solid rgb(54, 70, 54);
     transition: all 0.3s ease;
 
     &:hover {
         transform: scale(1.2);
-        background-color: rgb(72, 99, 72);
+        background-color: transparent;
         color: white;
         box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.329);
-        border: 1px solid rgb(72, 99, 72);
+        border: 1px solid white;
     }
 
     @media only screen and (max-width: 800px){
@@ -145,3 +149,56 @@ section#titulo {
 
    
   }
+
+#about {
+    color: white;
+    padding: 0px 20px 20px 20px;
+    text-align: center;
+    margin: auto;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    max-width: 600px;
+    animation: about 0.8s ease normal;
+
+
+    @media only screen and (max-width: 600px){
+        font-size: 0.6em;
+    }
+}
+
+
+@keyframes titulos {
+    from {
+        opacity: 0;
+        transform: translateY(-3000px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(section);
+    }
+}
+
+@keyframes botoes {
+    from {
+        opacity: 0;
+        transform: translateY(3000px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(section);
+    }
+}
+
+@keyframes about {
+    from {
+        opacity: 0;
+        transform: translateY(3000px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(section);
+    }
+}
