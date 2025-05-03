@@ -3,6 +3,12 @@
     padding: 0px;
 }
 
+:root {
+
+    --cor-base1: #e8ffdc;
+    --cor-base2: #364636;
+}
+
 body {
     background-image: url(imgs/background-landpage.jpg);
     background-position: center;
@@ -17,7 +23,8 @@ main {
     padding: 10px;
 
     & h1 {
-        font-family: "Faculty Glyphic", sans-serif;
+        font-family: "Syne", sans-serif;
+        font-variant: small-caps;
         font-size: 6em;
         text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.386);
         transition: all 0.5s ease;
@@ -36,7 +43,7 @@ main {
         }
 
         @media only screen and (max-width: 330px){
-            font-size: 1.6em;
+            font-size: 1.8em;
         }
     }
 
@@ -75,7 +82,7 @@ section#titulo {
     max-width: fit-content;
     text-align: center;
     padding: 10px;
-    color: white;
+    color: var(--cor-base1);
     margin: 15vh auto;
     transition: all 0.5s ease;
     animation: titulos 0.8s ease-out normal;
@@ -109,24 +116,24 @@ section#titulo {
 }
 
 .botoes input {
-    font-family: "Poppins", sans-serif;
+    font-family: "Syne", sans-serif;
     font-weight: 500;
     margin: 5px 50px;
     padding: 10px 40px;
     font-size: 1rem;
     cursor: pointer;
-    background-color: rgb(54, 70, 54);
-    color: white;
+    background-color: #364636;
+    color: var(--cor-base1);
     border-radius: 20px;
-    border: 1px solid rgb(54, 70, 54);
+    border: 1px solid #364636;
     transition: all 0.3s ease;
 
     &:hover {
         transform: scale(1.2);
         background-color: transparent;
-        color: white;
+        color: var(--cor-base1);
         box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.329);
-        border: 1px solid white;
+        border: 1px solid var(--cor-base1);
     }
 
     @media only screen and (max-width: 800px){
@@ -151,14 +158,14 @@ section#titulo {
   }
 
 #about {
-    color: white;
+    color: var(--cor-base1);
     padding: 0px 20px 20px 20px;
     text-align: center;
     margin: auto;
     font-family: "Poppins", sans-serif;
     font-weight: 200;
     max-width: 600px;
-    animation: about 0.8s ease normal;
+    animation: about 1s ease-out normal;
 
 
     @media only screen and (max-width: 600px){
