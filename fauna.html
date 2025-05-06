@@ -3,10 +3,200 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
     <title>Fauna - Biocaju</title>
+
+
+    <style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Syne:wght@400..800&display=swap');
+
+    * {
+    margin: 0px;
+    padding: 0px;
+    }
+
+
+    :root {
+
+    --cor-base1: #e8ffdc;
+    --cor-base2: #364636;
+    }
+
+    body {
+        background-color: white;
+    }
+
+    header {
+        background-image: url(imgs/image.png);
+        background-position: bottom;
+        color: white;
+        padding: 30px;
+
+        & h1 {
+            font-size: 6em;
+            font-family: "Syne", sans-serif;
+            font-variant: small-caps;
+            max-width: fit-content;
+            padding: 0px 10px 0px 10px;
+            margin: auto;
+            cursor: pointer;
+        }
+
+        & p {
+            font-size: 1.1em;
+            font-family: "Poppins", sans-serif;
+            max-width: fit-content;
+            margin: auto;
+        }
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    aside {
+       margin: auto;
+       max-width: fit-content;
+
+        & input {
+            padding: 10px 40px;
+            border-radius: 20px;
+            margin: 40px 30px 10px 30px;
+            border: 1px solid #364636;
+            cursor: pointer;
+            background-color: #364636;
+            color: white;
+            font-family: "Syne", sans-serif;
+            font-size: 1.1em;
+            font-weight: 500;
+            transition: all 0.3s ease;
+
+            &:hover {
+                transform: scale(1.1);
+                background-color: transparent;
+                border: 1px solid #364636;
+                color: #364636;
+            }
+        }
+    }
+
+    #tittle {
+        font-family: "Poppins", sans-serif;
+        font-size: 2em;
+        color: #435743;
+        max-width: fit-content;
+        margin: 3% auto;
+    }
+
+    .animal-type {
+        font-family: "Poppins", sans-serif;
+        font-size: 1.2em;
+        max-width: fit-content;
+        margin: auto;
+        color: #435743;
+
+        & h2 {
+            font-weight: 500;
+        }
+    }
+
+    #flex {
+        max-width: 1200px;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 50px auto;
+
+        & div {
+            flex: 1 1 300px;
+            margin: 10px 20px;
+            box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.178);
+            border-left: 1px solid lightgray;
+            border-radius: 10px;
+            background-color: white;
+        }
+
+        & img {
+            width: 100%;
+            border-top-right-radius: 8px;
+            border-top-left-radius: 8px;
+        }
+
+        & p {
+            padding: 10px;
+            font-family: "Poppins", sans-serif;
+        }
+    }
+
+    </style>
 </head>
 <body>
-    
+    <header>
+        <h1>Biocaju</h1>
+        <p>A vida que corre ao nosso redor</p>
+    </header>
+    <main>
+        <aside>
+            <a href="https://teumrqs.github.io/project-ambiental/index.html"><input type="button" value="VOLTAR"></a>
+            <a href=""><input type="button" value="FLORA"></a>
+        </aside>
+        <section id="tittle">
+            <h1>Fauna de Sergipe</h1>
+        </section>
+        <section class="animal-type">
+            <h2>Anfíbios</h2>
+            <hr>
+        </section>
+        <section id="flex">
+            <div>
+               <img src="imgs/Leptodactylus-labyrinthicus.png">
+               <p>Leptodactylus labyrinthicus</p> 
+            </div>
+            <div>
+                <img src="imgs/Leptodactylus-fuscus.png">
+                <p>Leptodactylus Fuscus</p>
+            </div>
+            <div>
+                <img src="imgs/Leptodactylus-ocellatus.png">
+                <p>Leptodactylus Ocellatus</p>
+            </div>
+            <div>
+                <img src="imgs/dendropsophus-minutus.png">
+                <p>Dendropsophus Minutus</p>
+            </div>
+            <div>
+                <img src="imgs/hypsiboas-albomarginatus.jpeg">
+                <p>Hypsiboas Albomarginatus</p>
+            </div>
+            <div>
+                <img src="imgs/hypsiboas-faber.jpeg">
+                <p>Hypsiboas Faber</p>
+            </div>
+            <div>
+                <img src="imgs/hypsiboas-raniceps.jpeg">
+                <p>Hypsiboas Raniceps</p>
+            </div>
+            <div>
+                <img src="imgs/phyllomedusa-hypochondrialis.png">
+                <p>Phyllomedusa Hypochondrialis</p>
+            </div>
+            <div>
+                <img src="imgs/chaunus-crucifer.jpg">
+                <p>Chaunus Crucifer</p>
+            </div>
+            <div>
+                <img src="imgs/chaunus-granulosus.jpeg">
+                <p>Chaunus Granulosus</p>
+            </div>
+            <div>
+                <img src="imgs/dermatonotus-muelleri.png">
+                <p>Dermatonotus Muelleri</p>
+            </div>
+            <div>
+                <img src="imgs/sishonops-annulatus.jpg">
+                <p>Sishonops Annulatus</p>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
